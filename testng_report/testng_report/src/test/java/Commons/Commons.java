@@ -32,8 +32,11 @@ public class Commons {
 	public static WebDriver driver;
 	public static String fp=System.getProperty("user.dir");
 	public ITestResult result;
-		public ExtentSparkReporter spark = new ExtentSparkReporter(fp+"\\reports\\spark"+System.currentTimeMillis()+".html");
-		 public  ExtentReports extent = new ExtentReports();
+	//	public ExtentSparkReporter spark = new ExtentSparkReporter(fp+"\\Reports\\spark"+System.currentTimeMillis()+".html");
+	public ExtentSparkReporter spark = new ExtentSparkReporter(fp+"\\Reports\\jenkins_extentreport.html");
+		
+	
+	public  ExtentReports extent = new ExtentReports();
 		 public ExtentTest test;
 	
 public void cofigreport()
